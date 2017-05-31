@@ -1,0 +1,63 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity" >
+
+    <EditText
+        android:id="@+id/txtInfo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/btnDiscover"
+        android:layout_alignRight="@+id/textView1"
+        android:layout_centerVertical="true"
+        android:ems="10"
+        android:inputType="none"
+        android:maxLines="50"
+        android:minLines="20"
+        android:minWidth="400dp"
+        android:editable="false">
+
+        <requestFocus />
+    </EditText>
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/btnToggleDIO"
+        android:layout_marginLeft="192dp"
+        android:layout_toRightOf="@+id/btnDiscover"
+        android:text="LBDIO"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+    <Button
+        android:id="@+id/btnDiscover"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/btnInit"
+        android:layout_alignBottom="@+id/btnInit"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="73dp"
+        android:text="strDiscover" />
+
+    <ToggleButton
+        android:id="@+id/btnToggleDIO"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/btnInit"
+        android:layout_alignBottom="@+id/btnInit"
+        android:layout_alignLeft="@+id/textView1"
+        android:text="strIOState" />
+
+    <Button
+        android:id="@+id/btnInit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/txtInfo"
+        android:layout_marginBottom="29dp"
+        android:layout_marginLeft="48dp"
+        android:layout_toRightOf="@+id/btnDiscover"
+        android:text="strInit" />
+
+</RelativeLayout>
